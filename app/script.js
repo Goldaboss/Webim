@@ -1,4 +1,2 @@
-"use strict";
 
-var hi = 'ПРивет';
-alert(hi);
+const hi = 'ПРивет';
