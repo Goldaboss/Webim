@@ -7,13 +7,14 @@
 	<title>Webim</title>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap&subset=cyrillic"
 	      rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 	<link rel="stylesheet"
 	      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	      crossorigin="anonymous">
 	<link rel="stylesheet"
 	      href="css/style.css">
-
+	
 </head>
 <body>
 <header class="header">
@@ -89,7 +90,35 @@
 	
 	<section class="container clients">
 		<h3>Наши клиенты - это лидеры рынка</h3>
-		<div>Slider</div>
+		<!-- Slider main container -->
+		<div class="swiper-container js-slider">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<img src="/images/logo_01.svg"
+					     alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="/images/logo_02.svg"
+					     alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="/images/logo_03.svg"
+					     alt="">
+				</div>
+				<div class="swiper-slide">
+					<img src="/images/logo_04.svg"
+					     alt="">
+				</div>
+				
+				...
+			</div>
+			
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
 	</section>
 </main>
 
@@ -123,7 +152,8 @@
 		</section>
 	</div>
 </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
