@@ -2,13 +2,113 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Webim</title>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	
 </head>
 <body>
-
-<script src="js/script.js"></script>
+	<header class="header">
+		<div class="header-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-10 col-lg-6">
+						<div class="row">
+							<div class="col-md-4 header-logo"><img src="images/logo_header.svg" alt="Logo"></div>
+							
+							<div class="col-md-8 service-info">
+								Сервис онлайн-консультирования<br>
+								<span>чат на сайт + 10 каналов</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-2 col-lg-6">
+						<nav class="navbar navbar-expand-lg navbar-light ">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav mr-auto navigation">
+									<li class="nav-item active">
+										<a class="nav-link" href="#">УСТАНОВКА</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">ВОЗМОЖНОСТИ</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">СТОИМОСТЬ</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">РЕГИСТРАЦИЯ</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					
+					<div class="col-md-6 order-md-1 order-2 align-self-center">
+						<h3>Принимайте обращения<br>
+							клиентов из разных каналов<br>
+							в одном сервисе</h3>
+						<button type="button" class=" btn-stl">Начать обрабатывать заявки с Webim</button>
+					</div>
+					<div class="col-md-6 order-md-2 order-1"><img class="img-fluid" src="images/img_01_x2.png"  alt="img"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<main>
+		<section class="container features">
+			<h2>Гибкие настройки внешнего вида<br>
+				и взаимодействия с клиентами
+			</h2>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-12"><span>1</span>Форма обратной связи и генератор лидов</div>
+				<div class="col-md-3 col-sm-6 col-12">2Настройка дизайна кнопки</div>
+				<div class="col-md-3 col-sm-6 col-12">3Гибкая настройка активных приглашений</div>
+				<div class="col-md-3 col-sm-6 col-12">4Передача данных и кликабельные ссылки в собщениях</div>
+				<div class="col-md-3 col-sm-6 col-12">5Редактирование и удаление отправленых сообщений</div>
+				<div class="col-md-3 col-sm-6 col-12">6Шаблоны ответов	и проверка орфографии</div>
+				<div class="col-md-3 col-sm-6 col-12">7Отправка эмодзи	и оценка качества диалога</div>
+				<div class="col-md-3 col-sm-6 col-12">8Наблюдение за печатью сообщения посетителем	</div>
+			</div>
+		</section>
+	
+		<section class="container clients">
+			<h3>Наши клиенты - это лидеры рынка</h3>
+			<div>Slider</div>
+		</section>
+	</main>
+	
+	<footer>
+		<div class="container">
+			<form>
+				<h2>Регистрация</h2>
+				<div class="row justify-content-center">
+					<div class="col-xl-6 col-sm-3 col-12"><input type="text" placeholder="Имя"></div>
+					<div class="col-xl-6 col-sm-3 col-12"><input type="text" placeholder="Телефон"></div>
+					<div class="col-xl-6 col-sm-3 col-12"><input type="email" placeholder="Email"></div>
+					<div class="col-xl-6 col-sm-3 col-12"><input type="password" placeholder="Пароль"></div>
+					<div class="col-xl-6 col-12"><input type="text" placeholder="Сайт"></div>
+				</div>
+				<input type="checkbox" checked>
+				<p>Регистрируясь в системе, я принимаю условия
+					<a href="#">Лицензионного cоглашения</a>, <a href="#">Политики конфиденциальности</a>
+					и даю Согласие на <a href="#">обработку персональных данных.</a></p>
+				<input type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ">
+			</form>
+			<section class="container">
+				<p>© Webim, 2019<br>
+					<a href="#">Политика конфиденциальности</a></p>
+			</section>
+		</div>
+	</footer>
+	
+	<script src="js/script.js"></script>
 </body>
 </html>

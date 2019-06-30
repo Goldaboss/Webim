@@ -1,4 +1,57 @@
 @import "_normalize.scss";
+@html {
+font-size: 16px;
+}
 body {
   font-family: 'Ubuntu', sans-serif;
+}
+
+
+.header {
+
+  background-image: url("/images/bg_photo.jpg");
+  background-size: cover;
+  &-bg {
+    background: rgba(40,43,68,0.97);
+    background: -moz-linear-gradient(45deg, rgba(40,43,68,0.97) 0%, rgba(40,43,68,0.97) 0%, rgba(61,68,128,0.97) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(40,43,68,0.97)), color-stop(0%, rgba(40,43,68,0.97)), color-stop(100%, rgba(61,68,128,0.97)));
+    background: -webkit-linear-gradient(45deg, rgba(40,43,68,0.97) 0%, rgba(40,43,68,0.97) 0%, rgba(61,68,128,0.97) 100%);
+    background: -o-linear-gradient(45deg, rgba(40,43,68,0.97) 0%, rgba(40,43,68,0.97) 0%, rgba(61,68,128,0.97) 100%);
+    background: -ms-linear-gradient(45deg, rgba(40,43,68,0.97) 0%, rgba(40,43,68,0.97) 0%, rgba(61,68,128,0.97) 100%);
+    background: linear-gradient(45deg, rgba(40,43,68,0.97) 0%, rgba(40,43,68,0.97) 0%, rgba(61,68,128,0.97) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282b44', endColorstr='#3d4480', GradientType=1 );
+    padding-top: 2.5em;
+  }
+  &-logo {
+    border-right: 1px solid #49657d;
+  }
+}
+h3 {
+  font-family: 'Ubuntu-light', sans-serif;
+  font-size: 2.125em;
+  color: #fff;
+  line-height: 1.56em;
+}
+
+.service-info {
+  font-size: 0.875em;
+  color: #fff;
+  & span {
+  font-size: 0.75em;
+  color: #60e5d7;
+  }
+}
+
+.btn-stl {
+  border-radius: 1.25em;
+  color: #fff;
+  background-color: #0d9aa8;
+  border: none;
+}
+
+
+
+.navigation a {
+  color: #fff;
+  font-size: 0.75em;
 }
