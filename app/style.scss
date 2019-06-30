@@ -119,6 +119,28 @@ body {
 }
 
 
+.features {
+	&__list {
+		counter-reset: list 0;
+		list-style-type: none;
+	}
+	&__item {
+		&:before{
+			counter-increment: list;
+			content: counter(list);
+			font-size: 3em;
+			font-weight: 700;
+			color: rgba(6, 149, 144, 0.2);
+		}
+	}
+	&__text {
+		display: flex;
+		padding-top: 35px;
+		color: #393e6b;
+		font-size: 0.875em;
+	}
+}
+
 //медиа запросы
 @media (max-width: 992px) {
 	.header {
@@ -166,12 +188,4 @@ body {
 	}
 }
 
-//@media (max-width: 768px) {
 
-//
-//		&__container {
-//			padding-top: 20px;
-//		}
-//
-//	}
-//}
