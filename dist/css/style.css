@@ -297,7 +297,7 @@ body {
 
 .clients {
   padding-top: 90px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   background-color: #f5f5fa; }
   .clients__partners {
     text-align: center;
@@ -306,6 +306,30 @@ body {
     color: #c0c1ce;
     font-weight: 700;
     padding-bottom: 90px; }
+  .clients .slider {
+    padding: 0 40px;
+    position: relative; }
+    .clients .slider__item {
+      padding: 0 40px; }
+    .clients .slider__btn {
+      position: absolute;
+      top: 50%;
+      width: 12px;
+      height: 22px;
+      margin-top: -11px;
+      z-index: 10;
+      cursor: pointer;
+      background-size: contain;
+      background: url("/images/arrow_next.svg") center no-repeat;
+      border: none;
+      outline: none; }
+      .clients .slider__btn--next {
+        right: 10px; }
+      .clients .slider__btn--prev {
+        left: 10px;
+        -webkit-transform: scale(-1);
+            -ms-transform: scale(-1);
+                transform: scale(-1); }
 
 .footer__container {
   padding-top: 50px;

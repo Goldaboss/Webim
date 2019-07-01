@@ -92,28 +92,35 @@
 		<div class="container">
 			<h3 class="clients__partners">Наши клиенты - это лидеры рынка</h3>
 			<!-- Slider main container -->
-			<div class="swiper-container js-slider">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<div class="swiper-slide">
-						<img src="/images/logo_01.svg" alt="">
+			<div class="slider">
+				<div class="swiper-container js-slider">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="slider__item">
+								<img src="/images/logo_01.svg" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slider__item">
+								<img src="/images/logo_02.svg" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slider__item">
+								<img src="/images/logo_03.svg" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slider__item">
+								<img src="/images/logo_04.svg" alt="">
+							</div>
+						</div>
 					</div>
-					<div class="swiper-slide">
-						<img src="/images/logo_02.svg" alt="">
-					</div>
-					<div class="swiper-slide">
-						<img src="/images/logo_03.svg" alt="">
-					</div>
-					<div class="swiper-slide">
-						<img src="/images/logo_04.svg" alt="">
-					</div>
-					...
 				</div>
-				
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+				<button class="slider__btn slider__btn--next js-btn-next"></button>
+				<button class="slider__btn slider__btn--prev js-btn-prev"></button>
 			</div>
 		</div>
 	</section>

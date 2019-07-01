@@ -160,7 +160,7 @@ body {
 
 .clients {
   padding-top: 90px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   background-color: #f5f5fa;
 
   &__partners {
@@ -171,6 +171,38 @@ body {
     font-weight: 700;
     padding-bottom: 90px;
   }
+
+  .slider {
+    padding: 0 40px;
+    position: relative;
+
+    &__item {
+      padding: 0 40px;
+    }
+    &__btn{
+      position: absolute;
+      top: 50%;
+      width: 12px;
+      height: 22px;
+      margin-top: -11px;
+      z-index: 10;
+      cursor: pointer;
+      background-size: contain;
+      background: url("/images/arrow_next.svg") center no-repeat;
+      border: none;
+      outline: none;
+
+      &--next{
+        right: 10px;
+      }
+      &--prev {
+        left: 10px;
+        transform: scale(-1);
+      }
+    }
+  }
+
+
 }
 
 .footer {
@@ -229,6 +261,8 @@ body {
   height: 20px;
 
 }
+
+
 //медиа запросы
 @media (max-width: 992px) {
   .header {
