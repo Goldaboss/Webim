@@ -73,9 +73,9 @@
 
 <main>
 	<section class="container features">
-		<h2>Гибкие настройки внешнего вида<br>
+		<h4 class="features__service-info">Гибкие настройки внешнего вида<br>
 			и взаимодействия с клиентами
-		</h2>
+		</h4>
 		<ol class="row features__list">
 			<li class="col-md-3 col-sm-6 col-12 features__item"><div class="features__text">Форма обратной связи и генератор лидов</div></li>
 			<li class="col-md-3 col-sm-6 col-12 features__item"><div class="features__text">Настройка дизайна кнопки</div></li>
@@ -88,68 +88,70 @@
 		</ol>
 	</section>
 	
-	<section class="container clients">
-		<h3>Наши клиенты - это лидеры рынка</h3>
-		<!-- Slider main container -->
-		<div class="swiper-container js-slider">
-			<!-- Additional required wrapper -->
-			<div class="swiper-wrapper">
-				<!-- Slides -->
-				<div class="swiper-slide">
-					<img src="/images/logo_01.svg"
-					     alt="">
-				</div>
-				<div class="swiper-slide">
-					<img src="/images/logo_02.svg"
-					     alt="">
-				</div>
-				<div class="swiper-slide">
-					<img src="/images/logo_03.svg"
-					     alt="">
-				</div>
-				<div class="swiper-slide">
-					<img src="/images/logo_04.svg"
-					     alt="">
+	<section class="clients">
+		<div class="container">
+			<h3 class="clients__partners">Наши клиенты - это лидеры рынка</h3>
+			<!-- Slider main container -->
+			<div class="swiper-container js-slider">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<img src="/images/logo_01.svg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="/images/logo_02.svg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="/images/logo_03.svg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="/images/logo_04.svg" alt="">
+					</div>
+					...
 				</div>
 				
-				...
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</div>
-			
-			<!-- If we need navigation buttons -->
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
 		</div>
 	</section>
 </main>
 
-<footer>
-	<div class="container">
-		<form>
-			<h2>Регистрация</h2>
-			<div class="row justify-content-center">
-				<div class="col-xl-6 col-sm-3 col-12"><input type="text"
-				                                             placeholder="Имя"></div>
-				<div class="col-xl-6 col-sm-3 col-12"><input type="text"
-				                                             placeholder="Телефон"></div>
-				<div class="col-xl-6 col-sm-3 col-12"><input type="email"
-				                                             placeholder="Email"></div>
-				<div class="col-xl-6 col-sm-3 col-12"><input type="password"
-				                                             placeholder="Пароль"></div>
-				<div class="col-xl-6 col-12"><input type="text"
-				                                    placeholder="Сайт"></div>
-			</div>
-			<input type="checkbox"
-			       checked>
-			<p>Регистрируясь в системе, я принимаю условия
-				<a href="#">Лицензионного cоглашения</a>, <a href="#">Политики конфиденциальности</a>
-				и даю Согласие на <a href="#">обработку персональных данных.</a></p>
-			<input type="submit"
-			       value="ЗАРЕГИСТРИРОВАТЬСЯ">
-		</form>
-		<section class="container">
-			<p>© Webim, 2019<br>
-				<a href="#">Политика конфиденциальности</a></p>
-		</section>
+<footer class="footer">
+	<div class="footer__bg">
+		<div class="container footer__container">
+			<form>
+				<h2 class="footer__registration">Регистрация</h2>
+				<div class="row justify-content-center">
+					<div class="col-xl-3 col-md-3 col-12"><input type="text" class="footer__item" placeholder="Имя"></div>
+					<div class="col-xl-3 col-md-3 col-12"><input type="text" class="footer__item" placeholder="Телефон"></div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-xl-3 col-md-3 col-12"><input type="email" class="footer__item" placeholder="Email"></div>
+					<div class="col-xl-3 col-md-3 col-12"><input type="password" class="footer__item" placeholder="Пароль"></div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-xl-6 col-md-6 col-12"><input type="text" class="footer__item" placeholder="Сайт"></div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-xl-6 col-md-6 col-12 d-flex footer__right">
+						<div class="checkbox">
+							<input type="checkbox" checked>
+					</div>
+						<p>Регистрируясь в системе, я принимаю условия
+							<a href="#" class="footer__right-link">Лицензионного cоглашения</a>, <a href="#" class="footer__right-link">Политики конфиденциальности</a>
+							и даю Согласие на<a href="#" class="footer__right-link">обработку персональных данных.</a></p>
+					</div>
+				</div>
+				<input type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ">
+			</form>
+			<section class="container">
+				<p>© Webim, 2019<br>
+					<a href="#">Политика конфиденциальности</a></p>
+			</section>
+		</div>
 	</div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
