@@ -23,4 +23,10 @@ $(document).ready(function () {
     },
     loop: true
   });
+  var navBtn$ = $('.js-btn-nav'),
+      navMenu$ = $('.js-nav-menu');
+  navBtn$.click(function () {
+    navMenu$.slideToggle();
+    navBtn$.toggleClass('active');
+  });
 });

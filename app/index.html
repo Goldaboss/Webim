@@ -5,16 +5,14 @@
 	<meta name="viewport"
 		  content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Webim</title>
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap&subset=cyrillic"
-		  rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 	<link rel="stylesheet"
-		  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		  href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap&subset=cyrillic">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 		  crossorigin="anonymous">
-	<link rel="stylesheet"
-		  href="css/style.css">
-	
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 <header class="header">
@@ -25,7 +23,7 @@
 					<div class="row">
 						<div class="col-lg-auto d-flex justify-content-between header__logo">
 							<img src="images/logo_header.svg" alt="Logo">
-							<button type="button" class="header__btn-nav"></button>
+							<button type="button" class="header__btn-nav js-btn-nav"></button>
 						</div>
 						
 						<div class="col  align-self-center header__service-info">
@@ -35,9 +33,9 @@
 					</div>
 				</div>
 				
-				<nav class="col-2 col-lg-6 align-self-lg-center align-self-lg-start header__nav">
+				<nav class="col-12 col-lg-6 align-self-lg-center align-self-lg-start header__nav js-nav-menu">
 					<ul class="header__menu">
-						<li class=" ">
+						<li class="">
 							<a class="header__menu-link" href="#">УСТАНОВКА</a>
 						</li>
 						<li class="">
@@ -47,7 +45,7 @@
 							<a class="header__menu-link" href="#">СТОИМОСТЬ</a>
 						</li>
 						<li class="">
-							<a class="header__menu-link header__menu-link--reg" href="#">РЕГИСТРАЦИЯ</a>
+							<a class="header__menu-link header__menu-link--reg" href="#reg">РЕГИСТРАЦИЯ</a>
 						</li>
 					</ul>
 				</nav>
@@ -139,62 +137,69 @@
 		</div>
 	</section>
 	
-	<section class="form">
-	<div class="form__bg">
-		<div class="container form__container">
-			<form action="#" method="post">
-				<h2 class="form__registration">Регистрация</h2>
-				<div class="row justify-content-center">
-					<div class="col-xl-3 col-md-3 col-12">
-						<input type="text" class="form__item" placeholder="Имя">
-					</div>
-					<div class="col-xl-3 col-md-3 col-12">
-						<input type="text" class="form__item" placeholder="Телефон">
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-xl-3 col-md-3 col-12">
-						<input type="email" class="form__item" placeholder="Email">
-					</div>
-					<div class="col-xl-3 col-md-3 col-12">
-						<input type="password" class="form__item" placeholder="Пароль"></div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-xl-6 col-md-6 col-12">
-						<input type="text" class="form__item" placeholder="Сайт">
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-xl-6 col-md-6 col-12 d-flex form__right">
-						<div class="agreement-input">
-							<div class="checkbox">
-								<input type="checkbox" id="agreements" class="checkbox__input" checked>
-								<label for="agreements" class="checkbox__label"></label>
-							</div>
+	<section class="form" id="reg">
+		<div class="form__bg">
+			<div class="container form__container">
+				<form action="#" method="post">
+					<h2 class="form__registration">Регистрация</h2>
+					<div class="row justify-content-center">
+						<div class="col-xl-3 col-md-3 col-12">
+							<input type="text" class="form__item" placeholder="Имя">
 						</div>
-						<p>Регистрируясь в системе, я принимаю условия
-							<a href="#" class="form__right-link">Лицензионного cоглашения</a>, <a href="#"class="form__right-link">Политики
-								конфиденциальности</a>
-							и даю Согласие на<a href="#" class="form__right-link">обработку персональных данных.</a>
-						</p>
+						<div class="col-xl-3 col-md-3 col-12">
+							<input type="text" class="form__item" placeholder="Телефон">
+						</div>
 					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-xl-3 col-md-4 col-12">
-						<button type="submit" class="form__item form__item-btn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+					<div class="row justify-content-center">
+						<div class="col-xl-3 col-md-3 col-12">
+							<input type="email" class="form__item" placeholder="Email">
+						</div>
+						<div class="col-xl-3 col-md-3 col-12">
+							<input type="password" class="form__item" placeholder="Пароль"></div>
 					</div>
-				</div>
-			</form>
+					<div class="row justify-content-center">
+						<div class="col-xl-6 col-md-6 col-12">
+							<input type="text" class="form__item" placeholder="Сайт">
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-xl-6 col-md-6 col-12 d-flex form__right">
+							<div class="agreement-input">
+								<div class="checkbox">
+									<input type="checkbox" id="agreements" class="checkbox__input" checked>
+									<label for="agreements" class="checkbox__label"></label>
+								</div>
+							</div>
+							<p>Регистрируясь в системе, я принимаю условия
+								<a href="#" class="form__right-link">Лицензионного cоглашения</a>, <a href="#"
+																									  class="form__right-link">Политики
+									конфиденциальности</a>
+								и даю Согласие на<a href="#" class="form__right-link">обработку персональных данных.</a>
+							</p>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-xl-3 col-md-4 col-12">
+							<button type="submit" class="form__item form__item-btn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 </main>
 <footer class="footer">
-		<p class="footer__company">© Webim, 2019<br>
-			<a href="#" class="form__right-link">Политика конфиденциальности</a></p>
+	<p class="footer__company">© Webim, 2019<br>
+		<a href="#" class="form__right-link">Политика конфиденциальности</a></p>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
