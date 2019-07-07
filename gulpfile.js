@@ -9,20 +9,20 @@ gulp.task('styles', function(){ // Создаем таск "sass"
     return gulp.src('app/style.scss') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-        .pipe(gulp.dest('dist/css')) // Выгружаем результата в папку dist/css
+        .pipe(gulp.dest('docs/css')) // Выгружаем результата в папку docs/css
         .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
 gulp.task('html', function() {
     return gulp.src('app/*.html')
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('docs'))
         .pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('scripts', function() {
     return gulp.src('app/script.js')
         .pipe(babel({presets: ['@babel/env']}))
-        .pipe(gulp.dest('dist/js')) // Выгружаем результата в папку dist/js
+        .pipe(gulp.dest('docs/js')) // Выгружаем результата в папку docs/js
         .pipe(browserSync.reload({ stream: true }))
 
 });
@@ -30,7 +30,7 @@ gulp.task('scripts', function() {
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browser Sync
         server: { // Определяем параметры сервера
-            baseDir: 'dist' // Директория для сервера - dist
+            baseDir: 'docs' // Директория для сервера - docs
         },
         notify: false // Отключаем уведомления
     });
