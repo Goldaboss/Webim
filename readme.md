@@ -1,2 +1,2 @@
-http://goldaboss.github.io/webim/
+https://goldaboss.github.io/Webim/
 
