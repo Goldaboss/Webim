@@ -326,7 +326,7 @@ body {
       z-index: 10;
       cursor: pointer;
       background-size: contain;
-      background: url("/images/arrow_next.svg") center no-repeat;
+      background: url("../images/arrow_next.svg") center no-repeat;
       border: none;
       outline: none; }
       .clients .slider__btn--next {
